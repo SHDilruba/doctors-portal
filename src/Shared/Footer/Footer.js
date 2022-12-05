@@ -9,31 +9,30 @@ const Footer = () => {
           background: `url(${footer})`,
           backgroundSize: 'cover'
        }}
-     className="mt-32 px-40">
-      <div className="grid grid-cols-3 md:gap-36 lg:gap-64">
-         <div className='flex flex-col pr-64'>
-             <span className="footer-title">Services</span> 
-              <Link to='/' className="link link-hover">Marketing</Link>
-              <Link to='/' className="link link-hover">Advertisement</Link>
-              <Link to='/' className="link link-hover">Branding</Link>
-              <Link to='/' className="link link-hover">Design</Link>
+     className="mt-32 ">
+      <div className="grid grid-cols-3 md:gap-8 lg:gap-32 px-16 lg:ml-36">
+         <div className='flex flex-col me-8'>
+             <span className="footer-title">SERVICES</span> 
+              <Link to='/' className="link link-hover">Emergency Checkup</Link>
+              <Link to='/' className="link link-hover">Monthly Checkup</Link>
+              <Link to='/' className="link link-hover">Weekly Checkup</Link>
+              <Link to='/' className="link link-hover">Deep Checkup</Link>
           </div> 
           <div className='flex flex-col'>
-              <span className="footer-title">Company</span> 
-              <Link to='/' className="link link-hover">About us</Link>
-              <Link to='/' className="link link-hover">Contact</Link>
-              <Link to='/' className="link link-hover">Jobs</Link>
-              <Link to='/' className="link link-hover">Press kit</Link>
-           </div> 
+              <span className="footer-title">ORAL HEALTH</span> 
+              <Link to='/' className="link link-hover">Fluoride Treatment</Link>
+              <Link to='/' className="link link-hover">Cavity Filling</Link>
+              <Link to='/' className="link link-hover">Teath Whitening</Link>
+          </div>
           <div className='flex flex-col'>
-              <span className=" footer-title">Legal</span> 
-              <Link to='/' className="link link-hover">Terms of use</Link>
-              <Link to='/' className="link link-hover">Privacy policy</Link>
-              <Link to='/' className="link link-hover">Cookie policy</Link>
-        </div>
-     <div>
+              <span className=" footer-title">OUR ADDRESS</span> 
+              <Link to='/' className="link link-hover">101010 Hudson</Link>
+              <Link to='/' className="link link-hover">New York</Link>
+              <Link to='/' className="link link-hover">USA</Link>
+         </div> 
+       <div>
+     </div>
    </div>
-  </div>
   <div className='text-center pb-16'>
        <p>Copyright © 2022 - All right reserved</p>
   </div>
