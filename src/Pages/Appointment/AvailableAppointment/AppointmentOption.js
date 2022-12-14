@@ -1,5 +1,4 @@
 import React from 'react';
-import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 const AppointmentOption = ({appointmentOption, setTreatment}) => {
 
@@ -12,13 +11,11 @@ const AppointmentOption = ({appointmentOption, setTreatment}) => {
             <p>{slots.length > 0 ? slots[0] : 'Try another day'}</p>
             <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
          <div htmlFor="booking-modal" className="card-actions  justify-center mt-1">
-            <PrimaryButton>
-                <label 
+            <label className='btn btn-secondary bg-gradient-to-r from-primary to-secondary'
                 disabled={slots.length === 0}
                 htmlFor="booking-modal"
                 onClick={()=> setTreatment(appointmentOption)}
-                >Book Appointment </label>
-           </PrimaryButton>
+            >Book Appointment </label>
         </div>
      </div>
    </div>
