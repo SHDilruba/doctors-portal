@@ -11,9 +11,7 @@ function App() {
     </div>
   );
 }
-
 export default App;
 
 
 
-//74-6 done
