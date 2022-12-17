@@ -16,6 +16,7 @@ const BookingModal = ({treatment, selectedDate, setTreatment, refetch}) => {
     const email = form.email.value;
     const phone = form.phone.value;
     const slot = form.slot.value;
+    const date = form.date.value;
 
     const booking = {
       appointmentDate: date,
@@ -23,7 +24,7 @@ const BookingModal = ({treatment, selectedDate, setTreatment, refetch}) => {
       patient: name,
       slot, 
       email,
-      phone
+      phone,
     }
     fetch('http://localhost:5000/bookings', {
         method: 'POST',
@@ -55,7 +56,7 @@ const BookingModal = ({treatment, selectedDate, setTreatment, refetch}) => {
            <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
           <h3 className="text-lg font-bold">{treatmentName}</h3>
             <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 mt-10'>
-            <input type="text" disabled value={date} className="input w-full bordered" />
+            <input name="date" type="text" disabled value={date} className="input w-full bordered" />
             <select name="slot" className="select select-bordered w-full max-w-xs">               
                  {
                   slots.map((slot, i) => <option
